@@ -1,2 +1,2 @@
-# codealpha_tasks
+# codealpha_task
 CodeAlpha Internship Project – AI-powered real-time projects

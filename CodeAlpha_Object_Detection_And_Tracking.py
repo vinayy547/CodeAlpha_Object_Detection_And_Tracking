@@ -6,7 +6,7 @@ cap = cv2.VideoCapture(0)
 
 window_name = "YOLOv8 Object Tracking"
 
-# Button coordinates
+
 button_x1, button_y1 = 540, 10
 button_x2, button_y2 = 630, 50
 
@@ -37,7 +37,7 @@ while running:
 
     annotated_frame = results[0].plot()
 
-    # Draw close button
+    
     cv2.rectangle(
         annotated_frame,
         (button_x1, button_y1),
@@ -58,9 +58,11 @@ while running:
 
     cv2.imshow(window_name, annotated_frame)
 
-    # Press Q to quit as backup
+   
     if cv2.waitKey(1) & 0xFF == ord('q'):
         break
 
 cap.release()
 cv2.destroyAllWindows()
+
+# python CodeAlpha_Object_Detection_And_Tracking.py to run the code.
